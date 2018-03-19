@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Digitar
+comment1.params=
+comment1.target=void\ keyboardLite()
+comment1.text=\n\ Sample\ static\ method\ which\ sets\ up\ a\ keyboard\ which\ can\ play\ two\ notes.\ \n
+comment2.params=
+comment2.target=void\ keyboard()
+comment2.text=\n\ keyboard()\ method\ is\ able\ to\ play\ sounds\ using\ StdAudio.java\ when\ key\ on\ keyborad\ is\ pressed.\n\ <p>\ A\ string\ of\ keys\ (characters)\ included\ in\ the\ keyboard\ is\ defined.\n\ The\ index\ of\ each\ of\ those\ chars\ in\ the\ string\ is\ used\ to\ caluculate\ a\ particular\ frequency\ using\ the\ equation\:\ \n\ frequency\ \=\ 440.0\ *\ Math.pow(1.05956,\ (i-24)),\ where\ i\ is\ the\ index\ of\ the\ char\ of\ the\ keyboard\ string.\n\ That\ frequency\ is\ passed\ as\ a\ parameter\ for\ an\ InstrumentString\ object,\ and\ that\ object\ is\ added\ to\ an\ array\n\ which\ shares\ the\ same\ index\ as\ the\ char\ in\ the\ String\ in\ the\ keyboard\ array.\n\ <p>\ Once\ this\ array\ of\ InstrumentString\ objects\ has\ been\ filled,\ methods\ are\ called\ which\ pluck,\ sample,\ play\ and\ tic\n\ that\ particular\ InstrumentString\ object\ when\ the\ key\ is\ pressed\ on\ the\ keyboard\n
+comment3.params=
+comment3.target=void\ keyboardAuto()
+comment3.text=\n\ keyboardAuto()\ method\ is\ able\ to\ play\ notes\ from\ keyboard\ automatically\ without\ keys\ on\ keyboard\ being\ pressed.\n\ <p>\ This\ method\ uses\ the\ same\ string\ of\ characters\ which\ define\ the\ characters\ of\ the\ keyboard()\ able\ to\ be\ played,\ \n\ as\ the\ keyboard\ method.\ This\ method\ constructs\ an\ array\ of\ InstrumentString\ objects\ in\ the\ same\ way\ as\ the\ keyboard()\ method.\n\ <p>\ Rather\ than\ assessing\ whether\ a\ certain\ key\ was\ pressed,\ as\ in\ keyboard(),\ keyboardAuto()\ loops\ through\ an\ array\ of\ Strings\ \n\ of\ particular\ notes\ to\ be\ played.\n\ Once\ each\ of\ these\ notes\ are\ accessed,\ each\ chord,\ or\ string\ of\ notes,\ is\ plucked,\ at\ an\ interval\ of\ one\ second\ per\ chord.\n\ These\ chords\ are\ added\ to\ the\ sample,\ played\ and\ tic-ed.\ \n
+numComments=4

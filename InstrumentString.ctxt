@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=InstrumentString
+comment1.params=frequency
+comment1.target=InstrumentString(double)
+comment1.text=\n\ Initialize\ an\ InstrumentString\ object\ to\ a\ given\ frequency\ in\ Hz\n\ The\ linked\ list\ should\ be\ filled\ with\ appropriate\ number\ of\ 0's\n
+comment2.params=inputArray
+comment2.target=InstrumentString(double[])
+comment2.text=\n\ Initialize\ an\ InstrumentString\ object\ by\ filling\ the\ linked\ list\ \n\ with\ intitial\ values\ given\ by\ the\ input\ array\n
+comment3.params=
+comment3.target=void\ pluck()
+comment3.text=\n\ Clear\ the\ linked\ list\ and\ fill\ it\ with\ "white\ noise"\n\ (random\ values\ between\ -0.5\ and\ 0.5)\n
+comment4.params=
+comment4.target=void\ tic()
+comment4.text=\n\ Advance\ the\ simulation\ one\ step\ by\ applying\ the\ Karplus-Strong\ update\ to\ the\ \n\ linked\ list\n\ Delete\ the\ sample\ at\ the\ front\ of\ the\ list\ (pollFirst)\n\ Add\ to\ the\ end\ of\ the\ list\ the\ average\ of\ the\ first\ two\ samples\n\ (addLast(avg(vibString[0]\ and\ vibString[1])/2)*energy\ decay\ factor)\n\ energy\ decay\ factor\ of\ .996\n
+comment5.params=
+comment5.target=double\ sample()
+comment5.text=\nthe\ first\ value\ of\ the\ linked\ list\ after\ pluck\n@return\ a\ double\ which\ is\ the\ first\ double\ of\ the\ linked\ list\n
+comment6.params=
+comment6.target=int\ time()
+comment6.text=\n\ \n\ @return\ an\ int\ which\ represents\ the\ total\ number\ of\ times\ tic\ has\ been\ called\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\n\ @return\ a\ String\ representation\ of\ the\ linked\ list\n
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+comment8.text=\n\ Tests\ each\ of\ the\ methods\ within\ the\ InstrumentString\ class\n
+numComments=9
